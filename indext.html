@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/tokyo-ghoul.ico">
+    <script>
+
+      $(document).ready(function(){
+          $("#tlimg").click(function(){
+              $("#tlimg").hide();
+              $("#blimg").show();
+             
+          });
+          $("#blimg").click(function(){
+              $("#blimg").hide();
+              $("#tlimg").show();
+             
+          });
+          $("#tmimg").click(function(){
+              $("#tmimg").hide();
+              $("#bmimg").show();
+             
+          });
+          $("#bmimg").click(function(){
+              $("#bmimg").hide();
+              $("#tmimg").show();
+             
+          });
+          $("#trimg").click(function(){
+              $("#trimg").hide();
+              $("#brimg").show();
+             
+          });
+          $("#brimg").click(function(){
+              $("#brimg").hide();
+              $("#trimg").show();
+             
+          });
+      });
+
+  </script>
+  <style>
+    * {
+    box-sizing: border-box;
+      }
+      img {
+          width: 100%;
+          height: 100%;
+      }
+  </style>
+
+    <title>Hossam</title>
+</head>
+<body>
+
+<div class="container-fluid row p-0 m-0" style="height: 91vh;">
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tl.jpg" class="vh-100" id="tlimg" alt="">
+    <img src="images/bl.jpg" class="vh-100" id="blimg" alt="" style="display: none;">
+  </div>
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tm.jpg" class="vh-100" id="tmimg" alt="">
+    <img src="images/bm.jpg" class="vh-100" id="bmimg" alt="" style="display: none;">
+  </div>
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tr.jpg" class="vh-100" id="trimg" alt="">
+    <img src="images/br.jpg" class="vh-100" id="brimg" alt="" style="display: none;">
+  </div>
+</div>
+
+<br>
+
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <p class="pt-2">أحمــد محمــد عبــد المنعــم</p>
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+      <iframe style="width: 100%; height: 80vh;" src="https://www.youtube.com/embed/phG-FZHYUT0" title="سرطان القولون: كيفية الوقاية منه" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+      </iframe>
+    </div>
+    
+    
+</body>
+</html>
