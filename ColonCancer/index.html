@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/tokyo-ghoul.ico">
+    <script>
+
+      $(document).ready(function(){
+          $("#tlimg").click(function(){
+              $("#tlimg").hide();
+              $("#blimg").show();
+             
+          });
+          $("#blimg").click(function(){
+              $("#blimg").hide();
+              $("#tlimg").show();
+             
+          });
+          $("#tmimg").click(function(){
+              $("#tmimg").hide();
+              $("#bmimg").show();
+             
+          });
+          $("#bmimg").click(function(){
+              $("#bmimg").hide();
+              $("#tmimg").show();
+             
+          });
+          $("#trimg").click(function(){
+              $("#trimg").hide();
+              $("#brimg").show();
+             
+          });
+          $("#brimg").click(function(){
+              $("#brimg").hide();
+              $("#trimg").show();
+             
+          });
+      });
+
+  </script>
+  <style>
+    * {
+    box-sizing: border-box;
+      }
+      img {
+          width: 100%;
+          height: 100%;
+      }
+      body{
+        background-color: rgba(3, 8, 37, 0.86);
+        background-image: url("images/bg1.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-attachment: fixed;
+        background-size: 300px;;
+      }
+      ul { direction: rtl; }
+      ul li a { direction: ltr; unicode-bidi: embed; }
+
+  </style>
+
+    <title>Colon Cancer</title>
+    <link rel="icon" type="image/x-icon" href="images/colon.png">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://www.helwan.edu.eg/">
+        <img src="images/helwan.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      </a>
+      
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://pharmacy.helwan.edu.eg/?page_id=1020">
+            <strong>
+          قســم الكيمياء الحيوية
+          كلية الصيدلة جامعة حلوان
+            </strong>
+        </a>
+      </li>
+      </ul>
+      <a class="navbar-brand" href="http://pharmacy.helwan.edu.eg/">
+        <img src="images/Ph.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      </a>
+
+    </div>
+   
+  </nav>
+
+  <div class="list-group list-group-horizontal d-flex justify-content-center">
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-end">
+      أحمــد محمــد عبــدالمنعــم علــى
+    </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-end">
+      أحمــد وليــد رفعــت
+    </a>
+
+  </div>  
+
+
+<div class="mt-5 mb-5 p-5 text-white rounded " style="width: 90%;">
+<div class="container-fluid row p-0 m-0" style="height: 80vh;">
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tl.jpg" class="vh-100" id="tlimg" alt="">
+    <img src="images/bl.jpg" class="vh-100" id="blimg" alt="" style="display: none;">
+  </div>
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tm.jpg" class="vh-100" id="tmimg" alt="">
+    <img src="images/bm.jpg" class="vh-100" id="bmimg" alt="" style="display: none;">
+  </div>
+  <div class="container-fluid col-4 p-0">
+    <img src="images/tr.jpg" class="vh-100" id="trimg" alt="">
+    <img src="images/br.jpg" class="vh-100" id="brimg" alt="" style="display: none;">
+  </div>
+</div>
+</div>
+
+<br>
+
+
+<div class="container  mt-5 text-white col-10" id="content" style="text-align: right;">
+    <h6>
+      ما هي الفحوصات التي يتضمّنها الكشف عن سرطان القولون والمستقيم
+    </h6>
+    <hr>
+ 
+    <ul>
+      <li> فحص القولون بالمنظار</li>
+      <li>اختبار الدم الخفي في البراز</li>
+      <li>فحص القولون السيني بالمنظار المرن</li>
+      <li>حقنة الباريوم الشرجية المزدوجة</li>
+      <li>التصوير المقطعي المحوسب للقولون</li>
+      <li>اختبار البراز للكشف عن الحمض الريبي النووي منقوص الأوكسجين</li>
+    </ul>
+
+</div>
+
+
+    <div class="container mt-5 col-8">
+      <iframe style="width: 100%; height: 80vh;" src="https://www.youtube.com/embed/phG-FZHYUT0" title="سرطان القولون: كيفية الوقاية منه" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+
+    
+
+    <div class="container-fluid bg-dark text-white py-2 mt-5" style="text-align: center;">
+      <p style="font-size: small;">
+      © hossam.eldin.01112056682@gmail.com
+      </p>
+    </div>
+    
+    
+</body>
+</html>
