@@ -20,10 +20,12 @@ body, html {
 
 .logo{
   height: 30%;
-  position: absolute;
   z-index: +2;
-  top: 0px;
-  right: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
 }
 
 .topright {
@@ -42,7 +44,7 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -70%);
   text-align: center;
 }
 
@@ -53,7 +55,7 @@ hr {
 </style>
 <body>
 
-  <img src="Resources/Logo.png" alt="" class="logo">
+  
   
 <div class="bgimg">
   <div class="topright">
@@ -63,11 +65,9 @@ hr {
     <h1>COMING SOON</h1>
     <hr>
     <p id="demo" style="font-size:30px"></p>
-
-    <br><br>
-
-    
-
+  </div>
+  <div class="logoDiv">
+    <img src="Resources/Logo.png" alt="" class="logo">
   </div>
   <!--
   <div class="bottomleft">
