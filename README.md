@@ -9,4 +9,4 @@
 <br>
 [Atherosclerosis](https://hossam-el-din.github.io/Atherosclerosis/)
 <br>
-[Atherosclerosis](https://hossam-el-din.github.io/Bioassay/)
+[Bioassay](https://hossam-el-din.github.io/Bioassay/)
