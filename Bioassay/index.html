@@ -5,10 +5,39 @@
     <style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    body {
-  background-color: lightblue;
+    <?php
+
+$path = $_SERVER['DOCUMENT_ROOT']."/demo/documents/"; // change the path to fit your websites document structure
+$fullPath = $path.$_GET['download_file'];
+
+if ($fd = fopen ($fullPath, "r")) {
+$fsize = filesize($fullPath);
+$path_parts = pathinfo($fullPath);
+$ext = strtolower($path_parts["extension"]);
+switch ($ext) {
+    case "pdf":
+    header("Content-type: application/pdf"); // add here more headers for diff. extensions
+    header("Content-Disposition: inline; filename=\"".$path_parts["basename"]."\"");     
+    break;
+    default;
+    header("Content-type: application/octet-stream");
+    header("Content-Disposition: filename=\"".$path_parts["basename"]."\"");
 }
+header("Content-length: $fsize");
+header("Cache-control: private"); //use this to open files directly
+while(!feof($fd)) {
+    $buffer = fread($fd, 2048);
+    echo $buffer;
+}
+}
+fclose ($fd);
+exit;
+?>
   
+.main{
+  min-width: 100vw;
+  min-height: 100vh;
+}
 
 .gallery-container {
   display: flex;
@@ -104,6 +133,10 @@ scrollThumb();
   <body>
     <h1>Bioassay </h1>
 
+    <a href="Bioassay.pdf"><img src="images/view.png" alt=" " border="0"/></a>
+
+    
+    <div class="main"
       <div class="slides">
         <div><img src="01.jpg"></div>
         <div><img src="02.jpg"></div>
@@ -112,6 +145,8 @@ scrollThumb();
 
       </div>
     </div>
+      
+    
     
 
   </body>
